@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para remover sublinhado dos links */
+.search-results a {
+    text-decoration: none;
+}
+
+/* Estilo para alterar a cor do link quando clicado */
+.search-results a:visited {
+    color: rgb(0, 0, 0) !important; /* Altere para a cor desejada */
+}
+
+/* Estilo para remover os marcadores de lista */
+.search-results li {
+    list-style-type: none;
+}
+
+/* Estilo para a fonte e cor */
+.search-results {
+    font-family: Georgia, serif; /* Altere a fonte conforme necessário */
+    color: yellow !important; /* Altere para a cor desejada */
+}
+
+
+
+/* Estilos CSS personalizados carrinho de compras */
+.cart-button {
+    position: absolute;
+    top: -140px; /* Ajuste conforme necessário para alinhar verticalmente */
+    right: -300px; /* Ajuste conforme necessário para alinhar horizontalmente */
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255) !important;
+}
+
+.cart-image {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* Adicionando estilos ao botão do carrinho */
+#carrinho {
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: rgb(251, 255, 0); /* Cor do texto */
+    padding: 4px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remover a borda */
+    border-radius: 4px; /* Borda arredondada */
+    cursor: pointer; /* Mostrar o cursor como ponteiro */
+    font-family: Arial, sans-serif; /* Estilo de fonte */
+    font-size: 12px; /* Tamanho do texto */
+}
+
+#carrinho:hover {
+    background-color: #45a049; /* Mudar a cor de fundo ao passar o mouse */
+}
+
+/* produto  */
+
+
+/* fim do codigo produto */
+
+/* Estilo para os produtos */
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.produto {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.produto .quantidade {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.produto .quantidade button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.produto .quantidade input {
+    width: 40px;
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.produto button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.produto button:hover {
+    background-color: #004080;
+}
+
+/* Estilo para links "Ver mais" */
+#ver-carrinho,
+#ver-mais {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #007bff;
+}
+
+#ver-carrinho:hover,
+#ver-mais:hover {
+    text-decoration: underline;
+}
+
+
+/* fim das modificações das palavras de busca */
+
+/* Container para envolver a barra de pesquisa e o botão de pesquisa */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px; /* Adicione margem conforme necessário */
+}
+
+/* Formatação do formulário para remover margens padrão */
+.search-container form {
+    display: flex;
+    margin: 0;
+}
+
+/* Estilo da barra de pesquisa */
+.search-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 10px 5px; /* Adiciona borda arredondada à esquerda */
+    background-color: #ffffff;
+    border: 1px solid yellow;
+    box-shadow: 5px 2px 5px rgba(20, 0, 0, 20); /* Adiciona uma sombra suave */
+    width: 300px; /* Ajuste a largura conforme necessário */
+    color: yellow !important; /* Altere para a cor desejada */
+    background-color: #0b4b0e; /* Altere para a cor verde desejada */
+}
+
+/* Estilo do botão de pesquisa */
+.search-container button {
+    background-color: #0b4b0e;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px 5px; /* Adiciona borda arredondada à direita */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Georgia, serif;
+    border: 1px solid #333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    color: yellow !important; /* Altere para a cor desejada */
+}
+
+.search-container button:hover {
+    color: #db7676;
+}
+/* plano de fundo do site */
+
+body {
+    background-image: url('imagens/laranja.jpg'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho correto da sua imagem */
+    background-size: cover; /* Isso faz com que a imagem cubra todo o fundo */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-size: 100%; /* ou 'contain', ou 'cover' */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Isso faz com que a imagem de fundo seja fixa */
+}
+
+.container {
+    background-image: url('imagens/laranja.jpg');
+    background-size: 0%; /* ou 'contain', ou 'cover' */
+    background-position: center;
+}
+
+/* fim do plano de fundo do site */
+
+body {
+    background-color: #ffffff; /* Substitua #f0f0f0 pela cor desejada em formato hexadecimal ou nome da cor */
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    align-items: center;
+    color: #202020;
+}
+.logo img {
+    width: 200px;
+    height: auto;
+    transform: translate(-30px, -100px); /* Ajuste os valores conforme necessário */
+}
+
+
+/* submenus*/
+
+.links {
+    margin: 20px;
+}
+
+.nav-itens {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-itens li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-itens,
+.nav-itens li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-itens a {
+    text-decoration: none;
+    color: #ffffff; /* Altere para a cor desejada do texto (por exemplo, branco) */
+    
+}
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0b4b0e; /* Altere para branco (#ffffff) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 5px 5px;
+    padding: 60px;
+    color: #ffffff; /* Altere para a cor desejada do texto (por exemplo, branco) */
+    border-radius: 0px 0px 0px 20px; /* Adiciona borda arredondada à esquerda */
+    z-index: 1000; /* Ajuste o valor conforme necessário para garantir que fique acima de outros elementos */
+    box-shadow: 5px 2px 5px rgba(20, 0, 0, 20); /* Adiciona uma sombra suave */
+}
+
+.submenu-parent:hover .submenu {
+    display: block;
+}
+
+
+
+/* codigo do menu */
+
+.nav-itens>li {
+    background-color: #0b4b0e; /* Adicione esta linha para o fundo preto */
+    border-radius: 0px 0px; /* Adiciona borda arredondada à esquerda */
+    padding: 10px;
+    margin-right: 1px; /* Adicione margem direita para criar espaço entre os itens */
+    box-shadow: 10px 2px 10px rgba(10, 0, 0, 10); /* Adiciona uma sombra suave */
+    
+}
+
+.nav-itens>li ul {
+    padding: 2px; /* Adicione um preenchimento interno ao submenu */
+    max-height: 150px; /* Defina uma altura máxima para o submenu */
+    overflow-y: auto; /* Adicione uma barra de rolagem vertical se necessário */
+    width: 188px; /* Aumente a largura do submenu */
+    text-align: center; /* Centralize o texto dentro do submenu */
+}
+
+
+.nav-itens>li:last-child {
+    margin-right: 0; /* Remove a margem direita do último item para evitar excesso de espaço */
+    
+}
+
+.nav-itens>li>a {
+    padding: 15px 20px; /* Ajuste o espaçamento conforme necessário */
+    color: #fff; /* Cor do texto */
+    text-decoration: none;
+    
+}
+
+
+.login {
+    padding: 8px 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #0b4b0e;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    text-decoration: none; /* Remove o sublinhado do texto do menu */
+}
+
+.cadastro {
+    padding: 10px 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #0b4b0e;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 1s background;
+    text-decoration: none; /* Remove o sublinhado do texto do menu */
+}
+
+.cadastro:hover {
+    background-color: #3d3d3d;
+    transition: 1s background;
+}
+
+
+
+
+/* inicio do codigo dos slides */
+
+.slider {
+    margin: 0 auto;
+    width:800px;
+    height:400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 800%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img {
+    width: 1000px; /* Define a largura da imagem como 550 pixels */
+    height: 320px; /* Define a altura da imagem como 300 pixels */
+}
+
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    position: relative; /* Define o posicionamento relativo */
+    top: -517px; /* Move para cima */
+    left: 295px; /* Move para a esquerda */
+    right: 30;  /* Move para a esquerda */
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0%;
+
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+
+}
+
+#radio5:checked ~ .first{
+    margin-left: -100%;
+
+}
+
+.navigation-auto div {
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    position: relative; /* Define o posicionamento relativo */
+    top: -160px; /* Move para cima */
+    left: 20px; /* Move para a direita */
+}
+
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 443px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: #fff;
+}
+
+/* fim do codigo dos slides */
+
+
+
+/* rede sociais */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.social-strip {
+    background-color: #2a2c2a;
+    padding: 10px 0;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace
+}
+
+.social-icon {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; /* Remova o sublinhado do link */
+    color: #fff; /* Cor branca para o texto */
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px; /* Espaço entre a imagem e o texto */
+}
+
+.social-icon span {
+    font-size: 0.8em; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+

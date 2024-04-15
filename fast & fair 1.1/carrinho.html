@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="carrinho.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Carrinho de Compras</h1>
+
+        <table id="itens-carrinho">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Imagem</th> <!-- Nova coluna para a imagem -->
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aqui serão listados os itens do carrinho -->
+            </tbody>
+        </table>
+        
+
+        <div id="total-carrinho">
+            <p>Total: <span id="total"></span></p>
+        </div>
+
+        <div id="formas-pagamento">
+            <h2>Formas de Pagamento</h2>
+            <ul>
+                <li><input type="radio" name="pagamento" value="pix"> PIX</li>
+                <li><input type="radio" name="pagamento" value="boleto"> Boleto Bancário</li>
+                <li><input type="radio" name="pagamento" value="cartao"> Cartão de Crédito</li>
+            </ul>
+            <button id="finalizar">Finalizar Compra</button>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+    
+    
+        
+</body>
+</html>

@@ -1,0 +1,174 @@
+/* plano de fundo do site */
+
+body {
+    background-image: url('imagens/laranja.jpg'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho correto da sua imagem */
+    background-size: cover; /* Isso faz com que a imagem cubra todo o fundo */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-size: 100%; /* ou 'contain', ou 'cover' */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Isso faz com que a imagem de fundo seja fixa */
+}
+
+.container {
+    background-image: url('imagens/laranja.jpg');
+    background-size: 0%; /* ou 'contain', ou 'cover' */
+    background-position: center;
+}
+
+/* fim do plano de fundo do site */
+
+
+
+
+
+
+/* modificação do estilo de palavras das buscas */
+
+/* Estilo para remover sublinhado dos links */
+.search-results a {
+    text-decoration: none;
+}
+
+/* Estilo para alterar a cor do link quando clicado */
+.search-results a:visited {
+    color: rgb(0, 0, 0) !important; /* Altere para a cor desejada */
+}
+
+/* Estilo para remover os marcadores de lista */
+.search-results li {
+    list-style-type: none;
+}
+
+/* Estilo para a fonte e cor */
+.search-results {
+    font-family: Georgia, serif; /* Altere a fonte conforme necessário */
+    color: yellow !important; /* Altere para a cor desejada */
+}
+
+
+
+/* fim das modificações das palavras de busca */
+
+/* Container para envolver a barra de pesquisa e o botão de pesquisa */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px; /* Adicione margem conforme necessário */
+}
+
+/* Formatação do formulário para remover margens padrão */
+.search-container form {
+    display: flex;
+    margin: 0;
+}
+
+/* Estilo da barra de pesquisa */
+.search-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 10px 5px; /* Adiciona borda arredondada à esquerda */
+    background-color: #ffffff;
+    border: 1px solid yellow;
+    box-shadow: 5px 2px 5px rgba(20, 0, 0, 20); /* Adiciona uma sombra suave */
+    width: 300px; /* Ajuste a largura conforme necessário */
+    color: yellow !important; /* Altere para a cor desejada */
+    background-color: #0b4b0e; /* Altere para a cor verde desejada */
+}
+
+/* Estilo do botão de pesquisa */
+.search-container button {
+    background-color: #0b4b0e;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px 5px; /* Adiciona borda arredondada à direita */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Georgia, serif;
+    border: 1px solid #333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    color: yellow !important; /* Altere para a cor desejada */
+}
+
+.search-container button:hover {
+    color: #db7676;
+}
+
+/* preços e produtos */
+
+
+.products {
+    padding: 20px 0;
+    text-align: center; /* Adicionado para centralizar o conteúdo */
+}
+
+.products .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alterado para centralizar o conteúdo */
+}
+
+
+
+
+.product-item {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid transparent; /* Removendo a borda inicial */
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out; /* Adicionado efeito de transição */
+    background-color: #d6d0d0; /* Cor de fundo adicionada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionado sombra para um efeito moderno */
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Adicionado efeito de escala ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ajustado a sombra no hover */
+}
+
+.product-item img {
+    max-width: 100px;
+    max-height: 150px;
+    margin: 0 auto;
+    border-radius: 5px; /* Adicionado borda arredondada à imagem */
+}
+
+.product-item h3 {
+    margin: 10px 0;
+    color: #0b4b0e; /* cor da fonte dos produtos */
+    font-size: 1.2em; /* Tamanho da fonte aumentado */
+}
+
+.product-item .product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.product-item p {
+    margin: 5px 0;
+    color: #777;
+    font-size: 0.9em; /* Tamanho da fonte ajustado */
+}
+
+.product-item .buy-button,
+.product-item .cart-button {
+    background-color: #0b4b0e; /* cor da barra do comprar e adicionar */
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product-item .buy-button:hover,
+.product-item .cart-button:hover {
+    background-color: #0b4b0e;
+    transform: scale(1.1); /* Adicionado efeito de escala ao passar o mouse */
+}

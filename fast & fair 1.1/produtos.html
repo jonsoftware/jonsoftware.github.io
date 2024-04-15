@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados da Busca</title>
+    <!-- Seus estilos CSS para os resultados da busca -->
+    <link rel="stylesheet" href="produtos.css">
+ 
+</head>
+<body>
+    
+    <div class="search-container">
+        <div class="search-bar">
+            <input id="searchInput" type="text" placeholder="Pesquisar departamento" oninput="searchItems()">
+            <button onclick="searchItems()">Pesquisar</button>
+            <ul id="searchResults" class="search-results"></ul>
+        </div>
+    </div>
+    
+    <li class="cart-button">
+        <a href="carrinho.html">
+            <span>Carrinho</span>
+            <span id="cartCount" class="cart-count">0</span>
+            <img src="incone/carrinho.png" alt="Carrinho de Compras" class="cart-image">
+
+        </a> 
+    </li>
+    
+    
+    <div class="products" id="frutas">
+        <div class="container">
+            <h2>Frutas</h2>
+        </div>
+    
+        <div class="product-item">
+            <img src="frutas/maca.jpg" alt="Fruta 1">
+            <h3>Maçã</h3>
+            <p>1 kg</p>
+            <p>R$ 5,99</p>
+            <button class="buy-button">Comprar</button>
+            <button class="cart-button">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="product-item">
+            <img src="frutas/manga.jpg" alt="Fruta 2">
+            <h3>Manga</h3>
+            <p>1 kg</p>
+            <p>R$ 8,99</p>
+            <button class="buy-button">Comprar</button>
+            <button class="cart-button">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    
+    <div class="products" id="legumes-e-verduras">
+        <div class="container">
+            <h2>Legumes e Verduras</h2>
+        </div>
+    
+        <div class="product-item">
+            <img src="legumes-e-verduras/cenoura.png" alt="Legume 1">
+            <h3>Cenoura</h3>
+            <p>500 g</p>
+            <p>R$ 3,49</p>
+            <button class="buy-button">Comprar</button>
+            <button class="cart-button">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="product-item">
+            <img src="legumes-e-verduras/cebola.jpg" alt="Legume 2">
+            <h3>Cebola</h3>
+            <p>500 g</p>
+            <p>R$ 3,49</p>
+            <button class="buy-button">Comprar</button>
+            <button class="cart-button">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    
+    <div class="products" id="diversos">
+        <div class="container">
+            <h2>Diversos</h2>
+        </div>
+    
+        <div class="product-item">
+            <img src="diversos/alho triturado.jpeg" alt="Produto Diverso 1">
+            <h3>Alho Triturado</h3>
+            <p>500 g</p>
+            <p>R$ 7,99</p>
+            <button class="buy-button">Comprar</button>
+            <button class="cart-button">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="product-item">
+            <img src="diversos/cogumelo fresco.jpg" alt="Produto Diverso 2">
+            <h3>Cogumelo</h3>
+            <p>500 g</p>
+            <p>R$ 7,99</p>
+            <button class="buy-button">Comprar</button>
+            <button class="cart-button">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    
+    <div class="products" id="congelados">
+        <div class="container">
+            <h2>Congelados</h2>
+        </div>
+    
+        <div class="product-item">
+            <img src="congelados/frutas vermelhas.jpeg" alt="Produto Congelado 1">
+            <h3>Frutas Vermelhas</h3>
+            <p>300 g</p>
+            <p>R$ 10,49</p>
+            <button class="buy-button">Comprar</button>
+            <button class="cart-button">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="product-item">
+            <img src="congelados/polpa acerola.jpeg" alt="Produto Congelado 2">
+            <h3>Polpa de Acerola</h3>
+            <p>300 g</p>
+            <p>R$ 10,49</p>
+            <button class="buy-button">Comprar</button>
+            <button class="cart-button">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    
+    <div class="products" id="especiarias">
+        <div class="container">
+            <h2>Especiarias</h2>
+        </div>
+    
+        <div class="product-item">
+            <img src="especiarias/pimenta calabresa.jpg" alt="Especiaria 1">
+            <h3>Pimenta Calabresa</h3>
+            <p>50 g</p>
+            <p>R$ 3,99</p>
+            <button class="buy-button">Comprar</button>
+            <button class="cart-button">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="product-item">
+            <img src="especiarias/pimenta do reino.jpg" alt="Especiaria 2">
+            <h3>Pimenta do Reino</h3>
+            <p>50 g</p>
+            <p>R$ 3,99</p>
+            <button class="buy-button">Comprar</button>
+            <button class="cart-button">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    
+    <div class="products" id="raizes">
+        <div class="container">
+            <h2>Raízes</h2>
+        </div>
+    
+        <div class="product-item">
+            <img src="raizes/batata doce.jpg" alt="Raiz 1">
+            <h3>Batata Doce</h3>
+            <p>200 g</p>
+            <p>R$ 5,29</p>
+            <button class="buy-button">Comprar</button>
+            <button class="cart-button">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="product-item">
+            <img src="raizes/cara sao tome descascado.png" alt="Raiz 2">
+            <h3>Cará São Tome Descascado</h3>
+            <p>200 g</p>
+            <p>R$ 5,29</p>
+            <button class="buy-button">Comprar</button>
+            <button class="cart-button">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    
+    <div class="products" id="produtos-naturais">
+        <div class="container">
+            <h2>Produtos Naturais</h2>
+        </div>
+    
+        <div class="product-item">
+            <img src="produtos-naturais/folhas de louro.jpg" alt="Produto Natural 1">
+            <h3>Folhas de Louro</h3>
+            <p>100 g</p>
+            <p>R$ 8,99</p>
+            <button class="buy-button">Comprar</button>
+            <button class="cart-button">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="product-item">
+            <img src="produtos-naturais/gengibre.png" alt="Produto Natural 2">
+            <h3>Gengibre</h3>
+            <p>100 g</p>
+            <p>R$ 8,99</p>
+            <button class="buy-button">Comprar</button>
+            <button class="cart-button">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <!-- Seus scripts JavaScript para manipular os resultados da busca, se necessário -->
+    <script src="produtos.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
